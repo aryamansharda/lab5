@@ -3,18 +3,23 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
+	$(".fName").click(function(e){
+		e.preventDefault();
+		var name = jQuery.trim($(this).text());
+		$(this).text(anagrammedName(name));
+
+		//$(this).text(anagrammedName($(this).text()));
+	});
 })
 
-/*
- * Function that is called when the document is ready.
- */
 function initializePage() {
 	console.log("Javascript connected!");
 }
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
-	
+
 	if (name == "Doug Engelbart") {
 		return "Notable Grudge";
 	} 

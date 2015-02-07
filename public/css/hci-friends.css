@@ -1,4 +1,3 @@
-/* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
 }
@@ -7,6 +6,15 @@
 .example-class-selector p {
 	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
 	color: #CC00AA;
+}
+
+.project{
+
+    width:300px;
+}
+
+.fName{
+
 }
 
 h1, h2, h3, h4, h5 {
